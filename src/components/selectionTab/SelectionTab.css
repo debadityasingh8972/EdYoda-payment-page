@@ -1,0 +1,100 @@
+.selectionTabContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #bebebe;
+  padding: 0.4em 1em;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+.selectionTabContainer label {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.selectionTabContainer label p {
+  text-align: right;
+}
+.labelHeading {
+  font-weight: 700;
+}
+
+.selectionTabContainer input[type='radio'] {
+  position: relative;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  font: inherit;
+  color: currentColor;
+  width: 1.3em;
+  height: 1.3em;
+  border: 0.1em solid rgb(193, 190, 190);
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+}
+
+.selectionTabContainer input[type='radio']::before {
+  content: url('../../assets/RadioButton.svg');
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  transform: scale(0);
+
+  transition: 120ms transform ease-in-out;
+}
+.disabledTabContainer {
+  border-color: #fece2e;
+  cursor: pointer;
+}
+.disabledTabContainer input[type='radio']::before {
+  content: url('../../assets/Radio Button (1).svg');
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  transform: scale(0.8);
+
+  transition: 120ms transform ease-in-out;
+}
+.selectionTabContainer input[type='radio']:checked::before {
+  position: absolute;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.checkShadow {
+  background-color: #d7eddd;
+}
+.uncheckShadow {
+  display: none;
+  background-color: #f4f4f4;
+}
+
+.tag {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 4em;
+  font-size: 0.7em;
+  padding: 0 1.5em 0.1em 1.5em;
+}
+.price-1 {
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-right: 0.2em;
+}
+.price-2 {
+  font-size: 0.8em;
+  opacity: 0.5;
+  margin-left: 0.2em;
+  text-align: right;
+}

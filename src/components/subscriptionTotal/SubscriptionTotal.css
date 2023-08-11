@@ -1,0 +1,44 @@
+.subscriptionTotal {
+  font-size: 0.9em;
+}
+.subheading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+.box {
+  padding: 0.5em;
+  border: 2px solid #de4313;
+  background-color: #fbe2d5;
+  color: #de4313;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.box div {
+  padding: 0.2em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.box p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0.5em;
+}
+.box img {
+  margin: 0 0.3em;
+}
+.price {
+  color: black;
+  font-weight: normal;
+}
+.totalAmount {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.totalHeading {
+  font-weight: 800;
+}

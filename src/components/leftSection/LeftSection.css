@@ -1,0 +1,43 @@
+.leftSectionContainer {
+  height: 90vh;
+  flex: 1;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leftSectionContainer h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+.linethrough {
+  text-decoration: line-through;
+  text-decoration-color: red;
+
+  font-size: 1.5em;
+}
+
+.highlightText {
+  color: #0096ff;
+  font-weight: inherit;
+  font-size: inherit;
+}
+.spantext {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.ListItem {
+  display: flex;
+
+  align-items: center;
+}
+.ListItem p {
+  margin-left: 2em;
+}
+.ListItem img {
+  transform: scale(0.5);
+  text-align: center;
+}

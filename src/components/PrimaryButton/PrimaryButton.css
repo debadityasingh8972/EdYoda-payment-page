@@ -1,0 +1,15 @@
+.PrimaryButton {
+  display: flex;
+
+  padding: 1em 3em;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.PrimaryButton:hover {
+  transform: scale(0.98);
+  transition: all 0.2s ease;
+}
